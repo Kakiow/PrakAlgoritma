@@ -11,11 +11,11 @@
 
 kode berada di file Pemilihan24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss 1 pemilihan.png)
-![Screenshot](images/ss 2 pemilihan.png)
-![Screenshot](images/ss 3 pemilihan.png)
-![Screenshot](images/ss 4 pemilihan.png)
-![Screenshot](images/ss 5 pemilihan.png)
+![Screenshot](images/ss1pemilihan.png)
+![Screenshot](images/ss2pemilihan.png)
+![Screenshot](images/ss3pemilihan.png)
+![Screenshot](images/ss4pemilihan.png)
+![Screenshot](images/ss5pemilihan.png)
 
 **Penjelasan:** ada 5 tahap: 
 1. Input nilai
@@ -27,8 +27,8 @@ kode berada di file Pemilihan24.java, berikut adalah screenshot nya
 ## 2.2. Perulangan
 kode berada di file Perulangan24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss 1 perulangan.png)
-![Screenshot](images/ss 2 perulangan.png)
+![Screenshot](images/ss1perulangan.png)
+![Screenshot](images/ss2perulangan.png)
 
 
 **Penjelasan:** ada 5 tahap: 
@@ -41,10 +41,10 @@ kode berada di file Perulangan24.java, berikut adalah screenshot nya
 ## 2.3. Array
 kode berada di file Array24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss 1 array.png)
-![Screenshot](images/ss 2 array.png)
-![Screenshot](images/ss 3 array.png)
-![Screenshot](images/ss 4 array.png)
+![Screenshot](images/ss1array.png)
+![Screenshot](images/ss2array.png)
+![Screenshot](images/ss3array.png)
+![Screenshot](images/ss4array.png)
 
 
 **Penjelasan:** ada 4 tahap: 
@@ -56,8 +56,8 @@ kode berada di file Array24.java, berikut adalah screenshot nya
 ## 2.4. Fungsi
 kode berada di file Fungsi24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss 1 fungsi.png)
-![Screenshot](images/ss 2 fungsi.png)
+![Screenshot](images/ss1fungsi.png)
+![Screenshot](images/ss2fungsi.png)
 
 
 **Penjelasan:** ada 3 tahap: 
@@ -69,8 +69,8 @@ kode berada di file Fungsi24.java, berikut adalah screenshot nya
 ## Tugas 1
 kode berada di file Tugas1_24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss 1 tugas 1.png)
-![Screenshot](images/ss 2 tugas 1.png)
+![Screenshot](images/ss1tugas1.png)
+![Screenshot](images/ss2tugas1.png)
 
 
 **Penjelasan:** ada 3 tahap: 
@@ -81,12 +81,12 @@ kode berada di file Tugas1_24.java, berikut adalah screenshot nya
 ## Tugas 2
 kode berada di file Tugas2_24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss 1 tugas 2.png)
-![Screenshot](images/ss 2 tugas 2.png)
-![Screenshot](images/ss 3 tugas 2.png)
-![Screenshot](images/ss 4 tugas 2.png)
-![Screenshot](images/ss 5 tugas 2.png)
-![Screenshot](images/ss 6 tugas 2.png)
+![Screenshot](images/ss1tugas2.png)
+![Screenshot](images/ss2tugas2.png)
+![Screenshot](images/ss3tugas2.png)
+![Screenshot](images/ss4tugas2.png)
+![Screenshot](images/ss5tugas2.png)
+![Screenshot](images/ss6tugas2.png)
 
 
 **Penjelasan:** ada 4 tahap: 
