@@ -65,7 +65,7 @@ kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
 1. Pada class MahasiswaMain, tunjukkan baris kode program yang digunakan untuk proses
 instansiasi! Apa nama object yang dihasilkan?
   Jawab:
-  ![Screenshot](images/ss3per2.png)
+  ![Screenshot](image/ss3per2.png)
   object yang di hasilkan adalah object mhs1
 2. Bagaimana cara mengakses atribut dan method dari suatu objek?
    Jawab:
@@ -79,9 +79,9 @@ instansiasi! Apa nama object yang dihasilkan?
 ## 2.3. Membuat Konstruktor
 kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss1per3.png)
-![Screenshot](images/ss2per3.png)
-![Screenshot](images/ss4per3.png)
+![Screenshot](image/ss1per3.png)
+![Screenshot](image/ss2per3.png)
+![Screenshot](image/ss4per3.png)
 
 
 **Penjelasan:** ada 5 tahap: 
@@ -95,7 +95,7 @@ kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah sc
 1. Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
 mendeklarasikan konstruktor berparameter!
   Jawab:
-  ![Screenshot](images/ss5per3.png)
+  ![Screenshot](image/ss5per3.png)
 2. Perhatikan class MahasiswaMain. Apa sebenarnya yang dilakukan pada baris program
 berikut?
   Jawab:
@@ -103,7 +103,7 @@ berikut?
 3. Hapus konstruktor default pada class Mahasiswa, kemudian compile dan run program.
 Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
   Jawab:
-  ![Screenshot](images/ss6per3.png)
+  ![Screenshot](image/ss6per3.png)
   hasilnya konstruktor is undefined karena kontruktor default tidak pernah dideklarasikan
 4. Setelah melakukan instansiasi object, apakah method di dalam class Mahasiswa harus diakses
 secara berurutan? Jelaskan alasannya!
@@ -112,16 +112,16 @@ secara berurutan? Jelaskan alasannya!
 5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor
 berparameter dari class Mahasiswa!
    Jawab:
-   ![Screenshot](images/ss7per3.png)
-   ![Screenshot](images/ss8per3.png)
+   ![Screenshot](image/ss7per3.png)
+   ![Screenshot](image/ss8per3.png)
 
 
 ## latihan 1
 kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss1lat1.png)
-![Screenshot](images/ss2lat1.png)
-![Screenshot](images/ss3lat1.png)
+![Screenshot](image/ss1lat1.png)
+![Screenshot](image/ss2lat1.png)
+![Screenshot](image/ss3lat1.png)
 
 **Penjelasan:** ada 5 tahap: 
 1. Membuat class main
@@ -134,9 +134,9 @@ kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah 
 ## latihan 2 
 kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss1lat2.png)
-![Screenshot](images/ss2lat2.png)
-![Screenshot](images/ss3lat2.png)
+![Screenshot](image/ss1lat2.png)
+![Screenshot](image/ss2lat2.png)
+![Screenshot](image/ss3lat2.png)
 
 **Penjelasan:** ada 5 tahap: 
 1. Membuat class main
