@@ -112,42 +112,30 @@ secara berurutan? Jelaskan alasannya!
    method di dalam class Mahasiswa tidak harus diakses secara berurutan, method hanya perlu di akses ketika di perlukan 
 5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor
 berparameter dari class Mahasiswa!
+   Jawab:
+   ![Screenshot](images/ss7per3.png)
+   ![Screenshot](images/ss8per3.png)
 
 
-## 2.4. Fungsi
-kode berada di file Fungsi24.java, berikut adalah screenshot nya
+## latihan 1
+kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss1fungsi.png)
-![Screenshot](images/ss2fungsi.png)
-
-
-**Penjelasan:** ada 3 tahap: 
-1. Menghitung pendapatan
-2. Kelompokkan pendapatan
-3. Output
-
-
-## Tugas 1
-kode berada di file Tugas1_24.java, berikut adalah screenshot nya
-
-![Screenshot](images/ss1tugas1.png)
-![Screenshot](images/ss2tugas1.png)
-
+![Screenshot](images/ss1lat1.png)
+![Screenshot](images/ss2lat1.png)
+![Screenshot](images/ss3lat1.png)
 
 **Penjelasan:** ada 3 tahap: 
 1. Input kode
 2. Pencocokan kode 
 3. Output
 
-## Tugas 2
-kode berada di file Tugas2_24.java, berikut adalah screenshot nya
+## latihan 2 
+kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss1tugas2.png)
-![Screenshot](images/ss2tugas2.png)
-![Screenshot](images/ss3tugas2.png)
-![Screenshot](images/ss4tugas2.png)
-![Screenshot](images/ss5tugas2.png)
-![Screenshot](images/ss6tugas2.png)
+![Screenshot](images/ss1lat2.png)
+![Screenshot](images/ss2lat2.png)
+![Screenshot](images/ss3lat2.png)
+
 
 
 **Penjelasan:** ada 4 tahap: 
