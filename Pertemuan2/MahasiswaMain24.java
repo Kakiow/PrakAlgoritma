@@ -13,5 +13,9 @@ public class MahasiswaMain24 {
         mhs1.ubahkelas("D4 1A");
         mhs1.updateIpk(3.60);
         mhs1.tampilkaninformasi();
+
+        Mahasiswa24 mhs2 = new Mahasiswa24("Okta2", "254107000000", 3.25, "TI 2L");
+        mhs2.updateIpk(3.30);
+        mhs2.tampilkaninformasi();
     }
 }
