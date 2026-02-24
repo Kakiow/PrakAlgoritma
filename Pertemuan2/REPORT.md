@@ -50,8 +50,8 @@ dikembalikan (di-return-kan) oleh method nilaiKinerja() tersebut?
 ## 2.2. Instansiasi Object, serta Mengakses Atribut dan Method
 kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
 
-![Screenshot](image/ss1per2)
-![Screenshot](image/ss2per2)
+![Screenshot](image/ss1per2.png)
+![Screenshot](image/ss2per2.png)
 
 
 **Penjelasan:** ada 5 tahap: 
