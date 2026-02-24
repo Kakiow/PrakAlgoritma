@@ -123,7 +123,7 @@ kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah 
 ![Screenshot](image/ss2lat1.png)
 ![Screenshot](image/ss3lat1.png)
 
-**Penjelasan:** ada 5 tahap: 
+**Penjelasan:** ada 6 tahap: 
 1. Membuat class main
 2. Instansiasi object
 3. Input nilai atribut
@@ -138,7 +138,7 @@ kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot
 ![Screenshot](image/ss2lat2.png)
 ![Screenshot](image/ss3lat2.png)
 
-**Penjelasan:** ada 5 tahap: 
+**Penjelasan:** ada 7 tahap: 
 1. Membuat class main
 2. Instansiasi object
 3. Input nilai atribut
