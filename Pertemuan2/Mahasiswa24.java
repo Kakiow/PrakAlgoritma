@@ -10,7 +10,7 @@ public class Mahasiswa24 {
         System.out.println("Nama: " + nama);
         System.out.println("Nim: " + nim);
         System.out.println("Ipk: " + ipk);
-        System.out.println("Kelas: " + kelas);
+        System.out.println("kelas: " + kelas);
     }
 
     void ubahkelas(String KelasBaru)    {
