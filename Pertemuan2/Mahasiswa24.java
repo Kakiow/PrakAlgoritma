@@ -18,7 +18,11 @@ public class Mahasiswa24 {
     }
 
     void updateIpk(double IpkBaru)  {
-        ipk = IpkBaru;
+        if (IpkBaru >= 0.0 && IpkBaru <= 0.0) {
+            ipk = IpkBaru;
+        } else {
+            System.out.println("IPK tidak valid. Harus antara 0.0 dan 4.0");
+        }
     }
 
     String nilaiKinerja() {
