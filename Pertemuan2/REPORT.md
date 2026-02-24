@@ -14,12 +14,10 @@ kode berada di file Mahasiswa24.java, berikut adalah screenshot nya
 ![Screenshot](image/ss1per1.png)
 ![Screenshot](image/ss2per1.png)
 
-**Penjelasan:** ada 5 tahap: 
-1. Input nilai
-2. Validasi nilai
-3. Hitung nilai
-4. Konversi nilai huruf
-5. output
+**Penjelasan:** ada 3 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
 
 ## 2.1.3 Pertanyaan
 
@@ -57,10 +55,10 @@ kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
 
 
 **Penjelasan:** ada 5 tahap: 
-1. Input NIM
-2. Menentukan nilai n
-3. Validasi angka
-4. Kondisi angka
+1. Membuat class main
+2. Instansiasi object
+3. Input nilai atribut
+4. Mengakses method
 5. output
 
 ## 2.2.3 Pertanyaan
@@ -86,11 +84,12 @@ kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah sc
 ![Screenshot](images/ss4per3.png)
 
 
-**Penjelasan:** ada 4 tahap: 
-1. Input nilai
-2. Hitung nilai dan konversi
-3. Output
-4. Hitung IP
+**Penjelasan:** ada 5 tahap: 
+1. Membuat Konstruktor default dan Konstruktor berparameter
+2. Instansiasi object
+3. Mengisi nilai atribut
+4. Mengakses method
+5. Output
 
 ## 2.3.3 Pertanyaan
 1. Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
@@ -124,10 +123,13 @@ kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah 
 ![Screenshot](images/ss2lat1.png)
 ![Screenshot](images/ss3lat1.png)
 
-**Penjelasan:** ada 3 tahap: 
-1. Input kode
-2. Pencocokan kode 
-3. Output
+**Penjelasan:** ada 5 tahap: 
+1. Membuat class main
+2. Instansiasi object
+3. Input nilai atribut
+4. Mengakses method
+5. Menghitung jam tambahan dan pengurangan jam
+6. output
 
 ## latihan 2 
 kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot nya
@@ -136,10 +138,11 @@ kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot
 ![Screenshot](images/ss2lat2.png)
 ![Screenshot](images/ss3lat2.png)
 
-
-
-**Penjelasan:** ada 4 tahap: 
-1. Input data jadwal
-2. Output seluruh data
-3. Pencarian berdasarkan hari tertentu
-4. Pencarian berdasarkan nama mata kuliah tertentu
+**Penjelasan:** ada 5 tahap: 
+1. Membuat class main
+2. Instansiasi object
+3. Input nilai atribut
+4. Mengakses method
+5. Memeriksa status
+6. Menghitung lama kerja
+7. output
