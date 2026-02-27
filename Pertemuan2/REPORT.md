@@ -14,12 +14,10 @@ kode berada di file Mahasiswa24.java, berikut adalah screenshot nya
 ![Screenshot](image/ss1per1.png)
 ![Screenshot](image/ss2per1.png)
 
-**Penjelasan:** ada 5 tahap: 
-1. Input nilai
-2. Validasi nilai
-3. Hitung nilai
-4. Konversi nilai huruf
-5. output
+**Penjelasan:** ada 3 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
 
 ## 2.1.3 Pertanyaan
 
@@ -52,22 +50,22 @@ dikembalikan (di-return-kan) oleh method nilaiKinerja() tersebut?
 ## 2.2. Instansiasi Object, serta Mengakses Atribut dan Method
 kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
 
-![Screenshot](image/ss1per2)
-![Screenshot](image/ss2per2)
+![Screenshot](image/ss1per2.png)
+![Screenshot](image/ss2per2.png)
 
 
 **Penjelasan:** ada 5 tahap: 
-1. Input NIM
-2. Menentukan nilai n
-3. Validasi angka
-4. Kondisi angka
+1. Membuat class main
+2. Instansiasi object
+3. Input nilai atribut
+4. Mengakses method
 5. output
 
 ## 2.2.3 Pertanyaan
 1. Pada class MahasiswaMain, tunjukkan baris kode program yang digunakan untuk proses
 instansiasi! Apa nama object yang dihasilkan?
   Jawab:
-  ![Screenshot](images/ss3per2.png)
+  ![Screenshot](image/ss3per2.png)
   object yang di hasilkan adalah object mhs1
 2. Bagaimana cara mengakses atribut dan method dari suatu objek?
    Jawab:
@@ -81,22 +79,23 @@ instansiasi! Apa nama object yang dihasilkan?
 ## 2.3. Membuat Konstruktor
 kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss1per3.png)
-![Screenshot](images/ss2per3.png)
-![Screenshot](images/ss4per3.png)
+![Screenshot](image/ss1per3.png)
+![Screenshot](image/ss2per3.png)
+![Screenshot](image/ss4per3.png)
 
 
-**Penjelasan:** ada 4 tahap: 
-1. Input nilai
-2. Hitung nilai dan konversi
-3. Output
-4. Hitung IP
+**Penjelasan:** ada 5 tahap: 
+1. Membuat Konstruktor default dan Konstruktor berparameter
+2. Instansiasi object
+3. Mengisi nilai atribut
+4. Mengakses method
+5. Output
 
 ## 2.3.3 Pertanyaan
 1. Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
 mendeklarasikan konstruktor berparameter!
   Jawab:
-  ![Screenshot](images/ss5per3.png)
+  ![Screenshot](image/ss5per3.png)
 2. Perhatikan class MahasiswaMain. Apa sebenarnya yang dilakukan pada baris program
 berikut?
   Jawab:
@@ -104,7 +103,7 @@ berikut?
 3. Hapus konstruktor default pada class Mahasiswa, kemudian compile dan run program.
 Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
   Jawab:
-  ![Screenshot](images/ss6per3.png)
+  ![Screenshot](image/ss6per3.png)
   hasilnya konstruktor is undefined karena kontruktor default tidak pernah dideklarasikan
 4. Setelah melakukan instansiasi object, apakah method di dalam class Mahasiswa harus diakses
 secara berurutan? Jelaskan alasannya!
@@ -112,46 +111,38 @@ secara berurutan? Jelaskan alasannya!
    method di dalam class Mahasiswa tidak harus diakses secara berurutan, method hanya perlu di akses ketika di perlukan 
 5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor
 berparameter dari class Mahasiswa!
+   Jawab:
+   ![Screenshot](image/ss7per3.png)
+   ![Screenshot](image/ss8per3.png)
 
 
-## 2.4. Fungsi
-kode berada di file Fungsi24.java, berikut adalah screenshot nya
+## latihan 1
+kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah screenshot nya
 
-![Screenshot](images/ss1fungsi.png)
-![Screenshot](images/ss2fungsi.png)
+![Screenshot](image/ss1lat1.png)
+![Screenshot](image/ss2lat1.png)
+![Screenshot](image/ss3lat1.png)
 
+**Penjelasan:** ada 6 tahap: 
+1. Membuat class main
+2. Instansiasi object
+3. Input nilai atribut
+4. Mengakses method
+5. Menghitung jam tambahan dan pengurangan jam
+6. output
 
-**Penjelasan:** ada 3 tahap: 
-1. Menghitung pendapatan
-2. Kelompokkan pendapatan
-3. Output
+## latihan 2 
+kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot nya
 
+![Screenshot](image/ss1lat2.png)
+![Screenshot](image/ss2lat2.png)
+![Screenshot](image/ss3lat2.png)
 
-## Tugas 1
-kode berada di file Tugas1_24.java, berikut adalah screenshot nya
-
-![Screenshot](images/ss1tugas1.png)
-![Screenshot](images/ss2tugas1.png)
-
-
-**Penjelasan:** ada 3 tahap: 
-1. Input kode
-2. Pencocokan kode 
-3. Output
-
-## Tugas 2
-kode berada di file Tugas2_24.java, berikut adalah screenshot nya
-
-![Screenshot](images/ss1tugas2.png)
-![Screenshot](images/ss2tugas2.png)
-![Screenshot](images/ss3tugas2.png)
-![Screenshot](images/ss4tugas2.png)
-![Screenshot](images/ss5tugas2.png)
-![Screenshot](images/ss6tugas2.png)
-
-
-**Penjelasan:** ada 4 tahap: 
-1. Input data jadwal
-2. Output seluruh data
-3. Pencarian berdasarkan hari tertentu
-4. Pencarian berdasarkan nama mata kuliah tertentu
+**Penjelasan:** ada 7 tahap: 
+1. Membuat class main
+2. Instansiasi object
+3. Input nilai atribut
+4. Mengakses method
+5. Memeriksa status
+6. Menghitung lama kerja
+7. output
