@@ -11,6 +11,7 @@ public class MahasiswaDemo24 {
        for (int i = 0; i < 3; i++) {
         arrayOfMahasiswa[i] = new Mahasiswa24();
 
+        
         System.out.println("Masukkan data Mahasiswa ke-" + (i + 1));
         System.out.print("Nim     : ");
         arrayOfMahasiswa[i].nim = okta.nextLine();
