@@ -57,10 +57,41 @@ arrayOfMahasiswa[0] = new Mahasiswa24();
 
 ## 3.3.  Menerima Input Isian Array Menggunakan Looping
 kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
-
-![Screenshot](image/ss1per2.png)
-![Screenshot](image/ss2per2.png)
-
+```
+Masukkan data Mahasiswa ke-1
+Nim     : 254107020239
+Nama    : okta
+Kelas   : 1F   
+IPK     : 3.60
+Masukkan data Mahasiswa ke-2
+Nim     : 23445654
+Nama    : okta2
+Kelas   : 1j
+IPK     : 3.50
+Masukkan data Mahasiswa ke-3
+Nim     : 253456546
+Nama    : okta3
+Kelas   : 1K
+IPK     : 3.42
+Data Mahasiswa ke-1
+Nim            : 254107020239
+Nama           : okta
+Kelas          : 1F
+Ipk            : 3.6
+--------------------------------------
+Data Mahasiswa ke-2
+Nim            : 23445654
+Nama           : okta2
+Kelas          : 1j
+Ipk            : 3.5
+--------------------------------------
+Data Mahasiswa ke-3
+Nim            : 253456546
+Nama           : okta3
+Kelas          : 1K
+Ipk            : 3.42
+--------------------------------------
+```
 
 **Penjelasan:** ada 5 tahap: 
 1. Membuat class main
@@ -69,22 +100,13 @@ kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
 4. Mengakses method
 5. output
 
-## 2.2.3 Pertanyaan
-1. Pada class MahasiswaMain, tunjukkan baris kode program yang digunakan untuk proses
-instansiasi! Apa nama object yang dihasilkan?
-  Jawab:
-  ![Screenshot](image/ss3per2.png)
-  object yang di hasilkan adalah object mhs1
-2. Bagaimana cara mengakses atribut dan method dari suatu objek?
-   Jawab:
-   untuk mengakses atribut bisa menggunakan namaobject.namaatribut
-   untuk mengakses method bisa menggunakan namaobject.namamethod
-3. Mengapa hasil output pemanggilan method tampilkanInformasi() pertama dan kedua berbeda?
-   Jawab:
-   karena output pada pemanggilan method tampilkanInformasi() yang pertama langsung menampilkan isi atribut setelah atribut tersebut di isi nilai,
-   output pada pemanggilan method tampilkanInformasi() yang kedua menampilkan nilai dari atribut object setelah atribut kelas dan ipk di ganti
+## 3.3.3 Pertanyaan
+1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program
+pada langkah no 3.
+2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama
+myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
 
-## 2.3. Membuat Konstruktor
+## 3.4. Constructor Berparameter
 kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah screenshot nya
 
 ![Screenshot](image/ss1per3.png)
