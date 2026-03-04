@@ -29,43 +29,33 @@ IPK         :3.93
 ---------------------------------------
 ```
 
-![Screenshot](image/ss1per1.png)
-![Screenshot](image/ss2per1.png)
+
 
 **Penjelasan:** ada 3 tahap: 
 1. Membuat class
 2. Deklarasi atribut
 3. Deklarasi method
 
-## 2.1.3 Pertanyaan
+## 3.2.3 Pertanyaan
 
-1. Sebutkan dua karakteristik class atau object!
-   Jawab:
-   sebuah class atau object memiliki atribut dan method
-2. Perhatikan class Mahasiswa pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class
-Mahasiswa? Sebutkan apa saja atributnya!
-  Jawab:
-  class mahasiswa memiliki 4 atribut yaitu atribut nama,nim,kelas,ipk
-3. Ada berapa method yang dimiliki oleh class tersebut? Sebutkan apa saja methodnya!
-   Jawab:
-   class mahasiswa memiliki 4 method yaitu method tampilkaninformasi,ubahkelas,updateIpk,nilaiKinerja
-4. Perhatikan method updateIpk() yang terdapat di dalam class Mahasiswa. Modifikasi isi method
-tersebut sehingga IPK yang dimasukkan valid yaitu terlebih dahulu dilakukan pengecekan apakah
-IPK yang dimasukkan di dalam rentang 0.0 sampai dengan 4.0 (0.0 <= IPK <= 4.0). Jika IPK tidak
-pada rentang tersebut maka dikeluarkan pesan: "IPK tidak valid. Harus antara 0.0 dan 4.0".
-  Jawab:
-![Screenshot](image/ss3per1.png)
-5. Jelaskan bagaimana cara kerja method nilaiKinerja() dalam mengevaluasi kinerja mahasiswa,
-kriteria apa saja yang digunakan untuk menentukan nilai kinerja tersebut, dan apa yang
-dikembalikan (di-return-kan) oleh method nilaiKinerja() tersebut?
-  Jawab:
-  cara kerja method nilaiKinerja() dengan cara melakukan cek pada nilai ipk yang di isi, jika ipk lebih dari sama dengan 3.5
-  maka method nilaiKinerja() akan mengembalikan sebuah kalimat "kinerja sangat baik", jika ipk lebih dari sama dengan 3.0
-  maka method nilaiKinerja() akan mengembalikan sebuah kalimat "Kinerja baik", jika ipk lebih dari sama dengan 2.0
-  maka method nilaiKinerja() akan mengembalikan sebuah kalimat "kinerja cukup" jika nilai ipk selain dari itu
-  maka method nilaiKinerja() akan mengembalikan sebuah kalimat "Kinerja kurang".
+1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki
+atribut dan sekaligus method? Jelaskan!
+2. Apa yang dilakukan oleh kode program berikut?
+   Mahasiswa24[] arrayOfMahasiswa = new Mahasiswa24[3];
+3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak, kenapa bisa dilakukan pemanggilan
+konstruktur pada baris program berikut?
+arrayOfMahasiswa[0] = new Mahasiswa24();
+4. Apa yang dilakukan oleh kode program berikut?
+        arrayOfMahasiswa[0] = new Mahasiswa24();
+        arrayOfMahasiswa[0].nim = "254107020239";
+        arrayOfMahasiswa[0].nama = "Okta";
+        arrayOfMahasiswa[0].kelas = "TI 1F";
+        arrayOfMahasiswa[0].Ipk = (float) 3.33;
+5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2?
 
-## 2.2. Instansiasi Object, serta Mengakses Atribut dan Method
+
+
+## 3.3.  Menerima Input Isian Array Menggunakan Looping
 kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
 
 ![Screenshot](image/ss1per2.png)
