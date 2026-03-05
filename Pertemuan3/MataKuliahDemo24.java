@@ -23,10 +23,12 @@ public class MataKuliahDemo24 {
             dummy = okta.nextLine();
             jumlahjam = Integer.parseInt(dummy);
             System.out.println("-------------------------------------");
+
+            arrayOfMatakuliah[i] = new MataKuliah24(kode, nama, sks, jumlahjam);
         }
 
         for (int i = 0; i < 3; i++) {
-            System.out.println("Data Matakuliah ke-" + (i + 1));
+            System.out.println("Data Matakuliah ke- " + (i + 1));
             System.out.println("Kode              :" + arrayOfMatakuliah[i].kode);
             System.out.println("Nama              :" + arrayOfMatakuliah[i].nama);
             System.out.println("Sks               :" + arrayOfMatakuliah[i].sks);
