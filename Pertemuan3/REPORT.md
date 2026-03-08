@@ -40,18 +40,28 @@ IPK         :3.93
 
 1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki
 atribut dan sekaligus method? Jelaskan!
+Jawab:
+Class yang akan dibuat array of object tidak harus selalu memiliki atribut method sekaligus, karena method hanya akan digunakan ketika nilai dari atribut object akan di proses lagi 
 2. Apa yang dilakukan oleh kode program berikut?
    Mahasiswa24[] arrayOfMahasiswa = new Mahasiswa24[3];
+   Jawab:
+   Kode program tersebut digunakan untuk melakukan deklarasi dan instansiasi array of object
 3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak, kenapa bisa dilakukan pemanggilan
 konstruktur pada baris program berikut?
 arrayOfMahasiswa[0] = new Mahasiswa24();
+Jawab:
+Class mahasiswa memiliki konstruktor,tetapi konstruktor tersebut adalah kontsruktor kosong bukan konstruktor berparameter.Konstruktor bisa di panggil karena kontruktor tersebut tetap valid walaupun konstruktor tersebut adalah kontsruktor kosong bukan konstruktor berparameter
 4. Apa yang dilakukan oleh kode program berikut?
         arrayOfMahasiswa[0] = new Mahasiswa24();
         arrayOfMahasiswa[0].nim = "254107020239";
         arrayOfMahasiswa[0].nama = "Okta";
         arrayOfMahasiswa[0].kelas = "TI 1F";
         arrayOfMahasiswa[0].Ipk = (float) 3.33;
+   Jawab:
+   Kode program tersebut melakukan instansiasi object untuk indeks 0 dan mengisi setiap atribut object indeks ke 0
 5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2?
+    Jawab:
+   Class Mahasiswa digunakan untuk deklarasi atribut,class mahasiswa demo digunakan untuk deklarasi dan instansiasi array kemudian instansiasi object dan mengisi setiap atribut object.
 
 
 
@@ -103,7 +113,8 @@ Ipk            : 3.42
 ## 3.3.3 Pertanyaan
 1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program
 pada langkah no 3.
-2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama
+
+3. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama
 myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
 
 ## 3.4. Constructor Berparameter
