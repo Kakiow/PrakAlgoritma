@@ -206,18 +206,186 @@ Jumlah jam        :6
    berparameter untuk harga barang jika kita ingin memberi nilai harga barang dari awal
 2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method
 tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
-4. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method
+Jawab:
+```
+package Pertemuan3;
+
+import java.util.Scanner;
+
+public class MataKuliah24 {
+    public String kode;
+    public String nama;
+    public int sks;
+    public int jumlahjam;
+
+    Scanner okta = new Scanner(System.in);
+
+    public MataKuliah24() {
+
+    }
+
+    public MataKuliah24(String kode,String nama,int sks,int jumlahjam) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahjam = jumlahjam;
+    }
+
+    void tambahData() {
+        System.out.print("Kode              :");
+        this.kode = okta.nextLine();
+        System.out.print("Nama              :");
+        this.nama = okta.nextLine();
+        System.out.print("SKS               :");
+        this.sks = okta.nextInt();
+        System.out.print("Jumlah jam        :");
+        this.jumlahjam = okta.nextInt();
+        okta.nextLine();
+    }
+}
+```
+```
+package Pertemuan3;
+
+import java.util.Scanner;
+
+public class MataKuliahDemo24 {
+    
+    public static void main(String[] args) {
+        Scanner okta = new Scanner(System.in);
+        MataKuliah24[] arrayOfMatakuliah = new MataKuliah24[3];
+        
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Masukkan data Matakuliah ke-" + (i + 1));
+            arrayOfMatakuliah[i] = new MataKuliah24();
+
+            arrayOfMatakuliah[i].tambahData();
+        }
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data Matakuliah ke- " + (i + 1));
+            System.out.println("Kode              :" + arrayOfMatakuliah[i].kode);
+            System.out.println("Nama              :" + arrayOfMatakuliah[i].nama);
+            System.out.println("Sks               :" + arrayOfMatakuliah[i].sks);
+            System.out.println("Jumlah jam        :" + arrayOfMatakuliah[i].jumlahjam);
+        }
+    }
+}
+```
+3. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method
 tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
-5. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari
+Jawab:
+```
+package Pertemuan3;
+
+import java.util.Scanner;
+
+public class MataKuliah24 {
+    public String kode;
+    public String nama;
+    public int sks;
+    public int jumlahjam;
+
+    Scanner okta = new Scanner(System.in);
+
+    public MataKuliah24() {
+
+    }
+
+    public MataKuliah24(String kode,String nama,int sks,int jumlahjam) {
+        this.kode = kode;
+        this.nama = nama;
+        this.sks = sks;
+        this.jumlahjam = jumlahjam;
+    }
+
+    void tambahData() {
+        System.out.print("Kode              :");
+        this.kode = okta.nextLine();
+        System.out.print("Nama              :");
+        this.nama = okta.nextLine();
+        System.out.print("SKS               :");
+        this.sks = okta.nextInt();
+        System.out.print("Jumlah jam        :");
+        this.jumlahjam = okta.nextInt();
+        okta.nextLine();
+    }
+
+    void cetakInfo() {
+        System.out.println("Kode                   :" + this.kode);
+        System.out.println("Nama                   :" + this.nama);
+        System.out.println("SKS                    :" + this.sks);
+        System.out.println("Jumlah jam             :" + this.jumlahjam);
+    }
+}
+```
+```
+package Pertemuan3;
+
+import java.util.Scanner;
+
+public class MataKuliahDemo24 {
+    
+    public static void main(String[] args) {
+        Scanner okta = new Scanner(System.in);
+        MataKuliah24[] arrayOfMatakuliah = new MataKuliah24[3];
+        
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Masukkan data Matakuliah ke-" + (i + 1));
+            arrayOfMatakuliah[i] = new MataKuliah24();
+
+            arrayOfMatakuliah[i].tambahData();
+        }
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data Matakuliah ke- " + (i + 1));
+            arrayOfMatakuliah[i].cetakInfo();
+        }
+    }
+}
+```
+4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari
 array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
+Jawab:
+```
+package Pertemuan3;
+
+import java.util.Scanner;
+
+public class MataKuliahDemo24 {
+    
+    public static void main(String[] args) {
+        Scanner okta = new Scanner(System.in);
+        int matkul24;
+
+        System.out.println("Jumlah elemen: ");
+        matkul24 = okta.nextInt();
+
+        MataKuliah24[] arrayOfMatakuliah = new MataKuliah24[matkul24];
+        
+
+        for (int i = 0; i < matkul24; i++) {
+            System.out.println("Masukkan data Matakuliah ke-" + (i + 1));
+            arrayOfMatakuliah[i] = new MataKuliah24();
+
+            arrayOfMatakuliah[i].tambahData();
+        }
+
+        for (int i = 0; i < matkul24; i++) {
+            System.out.println("Data Matakuliah ke- " + (i + 1));
+            arrayOfMatakuliah[i].cetakInfo();
+        }
+    }
+}
+```
 
 
 ## latihan 1
 kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah screenshot nya
 
-![Screenshot](image/ss1lat1.png)
-![Screenshot](image/ss2lat1.png)
-![Screenshot](image/ss3lat1.png)
+
 
 **Penjelasan:** ada 6 tahap: 
 1. Membuat class main
