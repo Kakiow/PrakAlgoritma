@@ -32,4 +32,11 @@ public class MataKuliah24 {
         this.jumlahjam = okta.nextInt();
         okta.nextLine();
     }
+
+    void cetakInfo() {
+        System.out.println("Kode                   :" + this.kode);
+        System.out.println("Nama                   :" + this.nama);
+        System.out.println("SKS                    :" + this.sks);
+        System.out.println("Jumlah jam             :" + this.jumlahjam);
+    }
 }
