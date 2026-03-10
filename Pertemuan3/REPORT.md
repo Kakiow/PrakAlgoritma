@@ -40,18 +40,28 @@ IPK         :3.93
 
 1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki
 atribut dan sekaligus method? Jelaskan!
+Jawab:
+Class yang akan dibuat array of object tidak harus selalu memiliki atribut method sekaligus, karena method hanya akan digunakan ketika nilai dari atribut object akan di proses lagi 
 2. Apa yang dilakukan oleh kode program berikut?
    Mahasiswa24[] arrayOfMahasiswa = new Mahasiswa24[3];
+   Jawab:
+   Kode program tersebut digunakan untuk melakukan deklarasi dan instansiasi array of object
 3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak, kenapa bisa dilakukan pemanggilan
 konstruktur pada baris program berikut?
 arrayOfMahasiswa[0] = new Mahasiswa24();
+Jawab:
+Class mahasiswa memiliki konstruktor,tetapi konstruktor tersebut adalah kontsruktor kosong bukan konstruktor berparameter.Konstruktor bisa di panggil karena kontruktor tersebut tetap valid walaupun konstruktor tersebut adalah kontsruktor kosong bukan konstruktor berparameter
 4. Apa yang dilakukan oleh kode program berikut?
         arrayOfMahasiswa[0] = new Mahasiswa24();
         arrayOfMahasiswa[0].nim = "254107020239";
         arrayOfMahasiswa[0].nama = "Okta";
         arrayOfMahasiswa[0].kelas = "TI 1F";
         arrayOfMahasiswa[0].Ipk = (float) 3.33;
+   Jawab:
+   Kode program tersebut melakukan instansiasi object untuk indeks 0 dan mengisi setiap atribut object indeks ke 0
 5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2?
+    Jawab:
+   Class Mahasiswa digunakan untuk deklarasi atribut,class mahasiswa demo digunakan untuk deklarasi dan instansiasi array kemudian instansiasi object dan mengisi setiap atribut object.
 
 
 
@@ -103,15 +113,83 @@ Ipk            : 3.42
 ## 3.3.3 Pertanyaan
 1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program
 pada langkah no 3.
+Jawab:
+![Screenshot](gambar/ss1_3.3.png)
+![Screenshot](gambar/ss2_3.3.png)
+```
+Masukkan data Mahasiswa ke-1
+Nim     : 2345235345
+Nama    : okta
+Kelas   : 1F
+IPK     : 3.60
+Masukkan data Mahasiswa ke-2
+Nim     : 23452352  
+Nama    : okta2
+Kelas   : 1L
+IPK     : 3.20
+Masukkan data Mahasiswa ke-3
+Nim     : 235235345
+Nama    : okta3
+Kelas   : 1K
+IPK     : 3.40
+Data Mahasiswa ke-1
+NIM: 2345235345
+Nama: okta
+Kelas: 1F
+IPK: 3.6
+Data Mahasiswa ke-2
+NIM: 23452352
+Nama: okta2
+Kelas: 1L
+IPK: 3.2
+Data Mahasiswa ke-3
+NIM: 235235345
+Nama: okta3
+Kelas: 1K
+IPK: 3.4
+```
 2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama
 myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
+Jawab:
+Karena pada kode tersebut tidak ada instansiasi object sehingga ketika kita mmengisi nilai atribut object indeks 0 maka akan terjadi error
 
 ## 3.4. Constructor Berparameter
 kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah screenshot nya
-
-![Screenshot](image/ss1per3.png)
-![Screenshot](image/ss2per3.png)
-![Screenshot](image/ss4per3.png)
+```
+Masukkan data Matakuliah ke-1
+Kode            :12345
+Nama            :Algoritma dan struktur data
+Sks             :2
+Jumlah jam      :6
+-------------------------------------
+Masukkan data Matakuliah ke-2
+Kode            :1234567
+Nama            :basis data
+Sks             :2
+Jumlah jam      :4
+-------------------------------------
+Masukkan data Matakuliah ke-3
+Kode            :12345678
+Nama            :dasar pemrograman
+Sks             :2
+Jumlah jam      :6
+-------------------------------------
+Data Matakuliah ke- 1
+Kode              :12345
+Nama              :Algoritma dan struktur data
+Sks               :2
+Jumlah jam        :6
+Data Matakuliah ke- 2
+Kode              :1234567
+Nama              :basis data
+Sks               :2
+Jumlah jam        :4
+Data Matakuliah ke- 3
+Kode              :12345678
+Nama              :dasar pemrograman
+Sks               :2
+Jumlah jam        :6
+```
 
 
 **Penjelasan:** ada 5 tahap: 
@@ -122,28 +200,16 @@ kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah sc
 5. Output
 
 ## 2.3.3 Pertanyaan
-1. Pada class Mahasiswa di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
-mendeklarasikan konstruktor berparameter!
-  Jawab:
-  ![Screenshot](image/ss5per3.png)
-2. Perhatikan class MahasiswaMain. Apa sebenarnya yang dilakukan pada baris program
-berikut?
-  Jawab:
-  baris kode tersebut digunakan untuk instansiasi sebuah object menggunakan class yang menggunakan konstruktor berparameter
-3. Hapus konstruktor default pada class Mahasiswa, kemudian compile dan run program.
-Bagaimana hasilnya? Jelaskan mengapa hasilnya demikian!
-  Jawab:
-  ![Screenshot](image/ss6per3.png)
-  hasilnya konstruktor is undefined karena kontruktor default tidak pernah dideklarasikan
-4. Setelah melakukan instansiasi object, apakah method di dalam class Mahasiswa harus diakses
-secara berurutan? Jelaskan alasannya!
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
    Jawab:
-   method di dalam class Mahasiswa tidak harus diakses secara berurutan, method hanya perlu di akses ketika di perlukan 
-5. Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor
-berparameter dari class Mahasiswa!
-   Jawab:
-   ![Screenshot](image/ss7per3.png)
-   ![Screenshot](image/ss8per3.png)
+   Suatu class dapat memiliki lebih dari 1 konstruktor, contohnya pada class produk terdapat 2 konstruktor, konstruktor kosong untuk stok barang dan konstruktor
+   berparameter untuk harga barang jika kita ingin memberi nilai harga barang dari awal
+2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method
+tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah
+4. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method
+tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar
+5. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari
+array of object Matakuliah ditentukan oleh user melalui input dengan Scanner
 
 
 ## latihan 1
