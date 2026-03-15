@@ -27,14 +27,10 @@ public class DosenDemo24 {
             arrayDosen[i] = new Dosen24(kode, nama, JenisKelamin, usia);
         }
 
-        int i = 1;
-        for (Dosen24 data : arrayDosen) {
-            System.out.println("Data Dosen Ke-" + i);
-            System.out.println("Kode                 :" + data.kode);
-            System.out.println("Nama                 :" + data.nama);
-            System.out.println("Jenis Kelamin        :" + (data.JenisKelamin ? "Pria" : "wanita"));
-            System.out.println("Usia                 :" + data.usia);
-            i++;
-        }
+        DataDosen24.dataSemuaDosen(arrayDosen);
+        DataDosen24.jumlahDosenPerJenisKelamin(arrayDosen);
+        DataDosen24.ratarataUsiaDosenPerJenisKelamin(arrayDosen);
+        DataDosen24.infoDosenPalingTua(arrayDosen);
+        DataDosen24.infoDosenPalingMuda(arrayDosen);
     }
 }
