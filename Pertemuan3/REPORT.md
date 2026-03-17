@@ -384,8 +384,97 @@ public class MataKuliahDemo24 {
 
 ## latihan 1
 kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah screenshot nya
+```
+package Pertemuan3;
 
+public class Dosen24 {
+    String kode;
+    String nama;
+    Boolean JenisKelamin;
+    int usia;
 
+    public Dosen24(String kode, String nama, Boolean JenisKelamin, int usia) {
+        this.kode = kode;
+        this.nama = nama;
+        this.JenisKelamin = JenisKelamin;
+        this.usia = usia;
+    }
+}
+```
+```
+package Pertemuan3;
+
+import java.util.Scanner;
+
+public class DosenDemo24 {
+    public static void main(String[] args) {
+        Scanner okta = new Scanner(System.in);
+        String nama,kode,jeniskel;
+        int usia;
+        boolean JenisKelamin;
+
+        Dosen24[] arrayDosen = new Dosen24[3];
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Masukkan Data Dosen Ke- " + (i + 1));
+            System.out.print("Kode                 :");
+            kode = okta.nextLine();
+            System.out.print("Nama                 :");
+            nama = okta.nextLine();
+            System.out.print("Jenis Kelamin        :");
+            jeniskel = okta.nextLine();
+            JenisKelamin = jeniskel.equalsIgnoreCase("Pria");
+            System.out.print("Usia                 :");
+            usia= okta.nextInt();
+            okta.nextLine();
+
+            arrayDosen[i] = new Dosen24(kode, nama, JenisKelamin, usia);
+        }
+
+        int i = 1;
+        for (Dosen24 data : arrayDosen) {
+            System.out.println("Data Dosen Ke-" + i);
+            System.out.println("Kode                 :" + data.kode);
+            System.out.println("Nama                 :" + data.nama);
+            System.out.println("Jenis Kelamin        :" + (data.JenisKelamin ? "Pria" : "wanita"));
+            System.out.println("Usia                 :" + data.usia);
+            i++;
+        }
+    }
+}
+```
+```
+Masukkan Data Dosen Ke- 1
+Kode                 :test
+Nama                 :test
+Jenis Kelamin        :pria
+Usia                 :23
+Masukkan Data Dosen Ke- 2
+Kode                 :test2
+Nama                 :test2
+Jenis Kelamin        :wanita
+Usia                 :34
+Masukkan Data Dosen Ke- 3
+Kode                 :test3
+Nama                 :test3
+Jenis Kelamin        :wanita
+Usia                 :32
+Data Dosen Ke-1
+Kode                 :test
+Nama                 :test
+Jenis Kelamin        :Pria
+Usia                 :23
+Data Dosen Ke-2
+Kode                 :test2
+Nama                 :test2
+Jenis Kelamin        :wanita
+Usia                 :34
+Data Dosen Ke-3
+Kode                 :test3
+Nama                 :test3
+Jenis Kelamin        :wanita
+Usia                 :32
+```
 
 **Penjelasan:** ada 6 tahap: 
 1. Membuat class main
