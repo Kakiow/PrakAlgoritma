@@ -118,10 +118,20 @@ Total keuntungan menggunakan Divide and conquer: 150.0
 
 ## 5.4.3 Pertanyaan
 1. Kenapa dibutuhkan variable mid pada method TotalDC()?
+Jawab:
+Variabel mid digunakan sebagai pembagi antara indeks bagian kiri dan indeks bagian kanan agar ke dua bagian indeks bisa dipecah menjadi lebih kecil
 2. Untuk apakah statement di bawah ini dilakukan dalam TotalDC()?
+Jawab:
+double lsum = totalDC(arr, l, mid); digunakan untuk menghitung nilai indeks bagian kiri sampai indeks tengah,double rsum = totalDC(arr, mid+1, r); digunakan untuk menghitung nilai indeks bagian tengah hingga kanan
 3. Kenapa diperlukan penjumlahan hasil lsum dan rsum seperti di bawah ini?
+Jawab:
+return lsum+rsum; adalah sebuah tahap combine dimana semua hasil perhitungan nilai indeks kiri hingga tengah dan nilai indeks tengah hingga kanan di jadikan satu
 4. Apakah base case dari totalDC()?
+Jawab:
+Base case dari totalDC() adalah ketika nilai dari indeks kiri sama dengan nilai indeks kanan
 5. Tarik Kesimpulan tentang cara kerja totalDC()
+Jawab:
+Membagi antara nilai indeks kiri hingga tengah dan nilai indeks tengah hingga kanan, hingga nilai dari indeks kiri sama dengan nilai dari indeks kanan, kemudian menyatukan antara hasil perhitungan indeks kiri hingga tengah dan indeks tengah hingga kanan
 
 
 ## latihan 1
