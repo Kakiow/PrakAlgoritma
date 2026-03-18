@@ -151,7 +151,7 @@ IPK: 3.4
 2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama
 myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
 Jawab:
-Karena pada kode tersebut tidak ada instansiasi object sehingga ketika kita mmengisi nilai atribut object indeks 0 maka akan terjadi error
+Karena pada kode tersebut tidak ada instansiasi object sehingga ketika kita mengisi nilai atribut object indeks 0 maka akan terjadi error
 
 ## 3.4. Constructor Berparameter
 kode berada di file Matakuliah24.java dan MatakuliahDemo24.java, berikut adalah output nya
