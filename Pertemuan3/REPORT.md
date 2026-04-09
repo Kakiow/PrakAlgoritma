@@ -9,7 +9,7 @@
 
 ## 3.2.  Membuat Array dari Object, Mengisi dan Menampilkan
 
-kode berada di file Mahasiswa24.java, berikut adalah screenshot nya
+kode berada di file Mahasiswa24.java dan MahasiswaDemo24.java, berikut adalah output nya
 
 ```
 Nim         :254107020239
@@ -31,10 +31,11 @@ IPK         :3.93
 
 
 
-**Penjelasan:** ada 3 tahap: 
+**Penjelasan:** ada 4 tahap: 
 1. Membuat class
 2. Deklarasi atribut
 3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
 
 ## 3.2.3 Pertanyaan
 
@@ -66,7 +67,7 @@ Class mahasiswa memiliki konstruktor,tetapi konstruktor tersebut adalah kontsruk
 
 
 ## 3.3.  Menerima Input Isian Array Menggunakan Looping
-kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
+kode berada di file MahasiswaDemo24.java, berikut adalah output nya
 ```
 Masukkan data Mahasiswa ke-1
 Nim     : 254107020239
@@ -103,12 +104,11 @@ Ipk            : 3.42
 --------------------------------------
 ```
 
-**Penjelasan:** ada 5 tahap: 
-1. Membuat class main
-2. Instansiasi object
-3. Input nilai atribut
-4. Mengakses method
-5. output
+**Penjelasan:** ada 4 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
 
 ## 3.3.3 Pertanyaan
 1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program
@@ -151,10 +151,10 @@ IPK: 3.4
 2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama
 myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
 Jawab:
-Karena pada kode tersebut tidak ada instansiasi object sehingga ketika kita mmengisi nilai atribut object indeks 0 maka akan terjadi error
+Karena pada kode tersebut tidak ada instansiasi object sehingga ketika kita mengisi nilai atribut object indeks 0 maka akan terjadi error
 
 ## 3.4. Constructor Berparameter
-kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah screenshot nya
+kode berada di file Matakuliah24.java dan MatakuliahDemo24.java, berikut adalah output nya
 ```
 Masukkan data Matakuliah ke-1
 Kode            :12345
@@ -192,14 +192,13 @@ Jumlah jam        :6
 ```
 
 
-**Penjelasan:** ada 5 tahap: 
-1. Membuat Konstruktor default dan Konstruktor berparameter
-2. Instansiasi object
-3. Mengisi nilai atribut
-4. Mengakses method
-5. Output
+**Penjelasan:** ada 4 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
 
-## 2.3.3 Pertanyaan
+## 3.4.3 Pertanyaan
 1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya
    Jawab:
    Suatu class dapat memiliki lebih dari 1 konstruktor, contohnya pada class produk terdapat 2 konstruktor, konstruktor kosong untuk stok barang dan konstruktor
@@ -382,7 +381,7 @@ public class MataKuliahDemo24 {
 ```
 
 
-## latihan 1
+## Tugas 1
 kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah screenshot nya
 ```
 package Pertemuan3;
@@ -476,26 +475,180 @@ Jenis Kelamin        :wanita
 Usia                 :32
 ```
 
-**Penjelasan:** ada 6 tahap: 
-1. Membuat class main
-2. Instansiasi object
-3. Input nilai atribut
-4. Mengakses method
-5. Menghitung jam tambahan dan pengurangan jam
-6. output
+**Penjelasan:** ada 4 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
 
-## latihan 2 
+## Tugas 2 
 kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot nya
+```
+package Pertemuan3;
 
-![Screenshot](image/ss1lat2.png)
-![Screenshot](image/ss2lat2.png)
-![Screenshot](image/ss3lat2.png)
+public class DataDosen24 {
+    
+    public static void dataSemuaDosen(Dosen24[] arrayOfDosen) {
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Data Dosen Ke-" + i);
+            System.out.println("Kode                 :" + arrayOfDosen[i].kode);
+            System.out.println("Nama                 :" + arrayOfDosen[i].nama);
+            System.out.println("Jenis Kelamin        :" + (arrayOfDosen[i].JenisKelamin ? "Pria" : "wanita"));
+            System.out.println("Usia                 :" + arrayOfDosen[i].usia);
+            System.out.println("-------------------------------------------");
+        }
+    }
 
-**Penjelasan:** ada 7 tahap: 
-1. Membuat class main
-2. Instansiasi object
-3. Input nilai atribut
-4. Mengakses method
-5. Memeriksa status
-6. Menghitung lama kerja
-7. output
+    public static void jumlahDosenPerJenisKelamin(Dosen24[] arrayOfDosen) {
+        int pria = 0;
+        int wanita = 0;
+        for (int i = 0; i < 3; i++) {
+            if (arrayOfDosen[i].JenisKelamin) {
+                pria++;
+            } else {
+                wanita++;
+            }
+        }
+        
+        System.out.println("Jumlah Pria     : " + pria);
+        System.out.println("Jumlah Wanita   : " + wanita);
+    }
+
+    public static void ratarataUsiaDosenPerJenisKelamin(Dosen24[] arrayOfDosen) {
+        int totalpria = 0;
+        int totalwanita = 0;
+        int pria = 0;
+        int wanita = 0;
+        for (int i = 0; i < 3; i++) {
+            if (arrayOfDosen[i].JenisKelamin) {
+                totalpria += arrayOfDosen[i].usia;
+                pria++;
+            } else {
+                totalwanita += arrayOfDosen[i].usia;
+                wanita++;
+            }
+        }
+        System.out.println("-------------------------------------------");
+        System.out.println("Rata-rata Usia Dosen Pria  : " + (double) totalpria / pria);
+        System.out.println("Rata-rata Usia Dosen Wanita: " + (double) totalwanita / wanita);
+    }
+
+    public static void infoDosenPalingTua(Dosen24[] arrayOfDosen) {
+        int tertua = 0;
+        for (int i = 1; i < 3; i++) {
+            if (arrayOfDosen[i].usia > arrayOfDosen[tertua].usia) {
+                tertua = i;
+            }
+        }
+        System.out.println("-------------------------------------------");
+        System.out.println("Dosen Tertua");
+        System.out.println("Kode     :" + arrayOfDosen[tertua].kode);
+        System.out.println("Nama     :" + arrayOfDosen[tertua].nama);
+    }
+
+    public static void infoDosenPalingMuda(Dosen24[] arrayOfDosen) {
+        int termuda = 0;
+        for (int i = 1; i < 3; i++) {
+            if (arrayOfDosen[i].usia < arrayOfDosen[termuda].usia) {
+                termuda = i;
+            }
+        }
+        System.out.println("-------------------------------------------");
+        System.out.println("Dosen Termuda");
+        System.out.println("Kode     :" + arrayOfDosen[termuda].kode);
+        System.out.println("Nama     :" + arrayOfDosen[termuda].nama);
+    }
+}
+```
+```
+package Pertemuan3;
+
+import java.util.Scanner;
+
+public class DosenDemo24 {
+    public static void main(String[] args) {
+        Scanner okta = new Scanner(System.in);
+        String nama,kode,jeniskel;
+        int usia;
+        boolean JenisKelamin;
+
+        Dosen24[] arrayDosen = new Dosen24[3];
+
+        for (int i = 0; i < 3; i++) {
+            System.out.println("Masukkan Data Dosen Ke- " + (i + 1));
+            System.out.print("Kode                 :");
+            kode = okta.nextLine();
+            System.out.print("Nama                 :");
+            nama = okta.nextLine();
+            System.out.print("Jenis Kelamin        :");
+            jeniskel = okta.nextLine();
+            JenisKelamin = jeniskel.equalsIgnoreCase("Pria");
+            System.out.print("Usia                 :");
+            usia= okta.nextInt();
+            okta.nextLine();
+
+            arrayDosen[i] = new Dosen24(kode, nama, JenisKelamin, usia);
+        }
+
+        DataDosen24.dataSemuaDosen(arrayDosen);
+        DataDosen24.jumlahDosenPerJenisKelamin(arrayDosen);
+        DataDosen24.ratarataUsiaDosenPerJenisKelamin(arrayDosen);
+        DataDosen24.infoDosenPalingTua(arrayDosen);
+        DataDosen24.infoDosenPalingMuda(arrayDosen);
+    }
+}
+```
+```
+Masukkan Data Dosen Ke- 1
+Kode                 :test       
+Nama                 :test
+Jenis Kelamin        :pria
+Usia                 :34
+Masukkan Data Dosen Ke- 2
+Kode                 :test2
+Nama                 :test2
+Jenis Kelamin        :wanita
+Usia                 :27
+Masukkan Data Dosen Ke- 3
+Kode                 :test3
+Nama                 :okta
+Jenis Kelamin        :pria
+Usia                 :30
+Data Dosen Ke-0
+Kode                 :test
+Nama                 :test
+Jenis Kelamin        :Pria
+Usia                 :34
+-------------------------------------------
+Data Dosen Ke-1
+Kode                 :test2
+Nama                 :test2
+Jenis Kelamin        :wanita
+Usia                 :27
+-------------------------------------------
+Data Dosen Ke-2
+Kode                 :test3
+Nama                 :okta
+Jenis Kelamin        :Pria
+Usia                 :30
+-------------------------------------------
+Jumlah Pria     : 2
+Jumlah Wanita   : 1
+-------------------------------------------
+Rata-rata Usia Dosen Pria  : 32.0
+Rata-rata Usia Dosen Wanita: 27.0
+-------------------------------------------
+Dosen Tertua
+Kode     :test
+Nama     :test
+-------------------------------------------
+Dosen Termuda
+Kode     :test2
+Nama     :test2
+```
+
+**Penjelasan:** ada 4 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya

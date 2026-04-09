@@ -9,7 +9,7 @@
 
 ## 5.2.  Menghitung Nilai Faktorial dengan Algoritma Brute Force dan Divide and Conquer
 
-kode berada di file Mahasiswa24.java, berikut adalah screenshot nya
+kode berada di file Faktorial24.java dan MainFaktorial24.java, berikut adalah output nya
 
 ```
 Masukkan nilai: 
@@ -20,10 +20,11 @@ Nilai faktorial 5menggunakan DC: 120
 
 
 
-**Penjelasan:** ada 3 tahap: 
+**Penjelasan:** ada 4 tahap: 
 1. Membuat class
 2. Deklarasi atribut
 3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
 
 ## 5.2.3 Pertanyaan
 
@@ -47,7 +48,7 @@ kecil dulu kemudian memberi solusi kepada masalah yang telah di pecah menjadi le
 
 
 ## 5.3. Menghitung Hasil Pangkat dengan Algoritma Brute Force dan Divide and Conquer
-kode berada di file MahasiswaMain24.java, berikut adalah screenshot nya
+kode berada di file Pangkat24.java dan MainPangkat24.java, berikut adalah outputnya nya
 ```
 Masukkan jumlah elemen: 3
 Masukkan nilai baris elemen ke-1: 2
@@ -66,12 +67,11 @@ HASIL PANGKAT DIVIDE AND CONQUER
 6^7: 279936
 ```
 
-**Penjelasan:** ada 5 tahap: 
-1. Membuat class main
-2. Instansiasi object
-3. Input nilai atribut
-4. Mengakses method
-5. output
+**Penjelasan:** ada 4 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
 
 ## 5.3.3 Pertanyaan
 1. Jelaskan mengenai perbedaan 2 method yang dibuat yaitu pangkatBF() dan pangkatDC()!
@@ -95,7 +95,7 @@ Method pangkatBF() bekerja dengan cara langsung mengalikan basis dengan pangkat 
 menjadi lebih kecil hingga sama dengan satu kemudian akan mengalikan dengan nilai pangkat itu sendiri
 
 ## 5.4. Menghitung Sum Array dengan Algoritma Brute Force dan Divide and Conquer
-kode berada di file Mahasiswa24.java dan MahasiswaMain24.java, berikut adalah screenshot nya
+kode berada di file sum24.java dan MainSum24.java, berikut adalah output nya
 ```
 Masukkan jumlah elemen: 
 5
@@ -109,13 +109,11 @@ Total keuntungan menggunakan Divide and conquer: 150.0
 ```
 
 
-**Penjelasan:** ada 5 tahap: 
-1. Membuat Konstruktor default dan Konstruktor berparameter
-2. Instansiasi object
-3. Mengisi nilai atribut
-4. Mengakses method
-5. Output
-
+**Penjelasan:** ada 4 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
 ## 5.4.3 Pertanyaan
 1. Kenapa dibutuhkan variable mid pada method TotalDC()?
 Jawab:
@@ -135,119 +133,85 @@ Membagi antara nilai indeks kiri hingga tengah dan nilai indeks tengah hingga ka
 
 
 ## latihan 1
-kode berada di file MataKuliah24.java dan MataKuliahMain24.java, berikut adalah screenshot nya
+kode berada di file Nilai24.java dan MainNilai24.java, berikut adalah output nya
 ```
-package Pertemuan3;
+package minggu5;
 
-public class Dosen24 {
-    String kode;
-    String nama;
-    Boolean JenisKelamin;
-    int usia;
+public class Nilai24 {
+    
+    public int TertinggiDC(int[] arr, int rendah, int tinggi) {
+        if (rendah == tinggi) {
+            return arr[rendah];
+        }
+        int mid = (rendah + tinggi) / 2;
 
-    public Dosen24(String kode, String nama, Boolean JenisKelamin, int usia) {
-        this.kode = kode;
-        this.nama = nama;
-        this.JenisKelamin = JenisKelamin;
-        this.usia = usia;
+        int l = TertinggiDC(arr, rendah, mid);
+        int r = TertinggiDC(arr, mid + 1, tinggi);
+
+        if (l > r) {
+            return l;
+        } else {
+            return r;
+        }
+    }
+
+    public int TerendahDC(int[] arr, int rendah, int tinggi) {
+        if (rendah == tinggi) {
+            return arr[rendah];
+        }
+        int mid = (rendah + tinggi) / 2;
+        
+        int l = TerendahDC(arr, rendah, mid);
+        int r = TerendahDC(arr, mid + 1, tinggi);
+
+        if (l < r) {
+            return l;
+        } else {
+            return r;
+        }
+    }
+
+    public double ratarataBF(int[] arr) {
+        double nilai = 0;
+        for (int i = 0; i < arr.length; i++) {
+            nilai += arr[i];
+        }
+        return nilai / arr.length;
     }
 }
+
 ```
 ```
-package Pertemuan3;
+package minggu5;
 
-import java.util.Scanner;
-
-public class DosenDemo24 {
+public class MainNilai24 {
+    
     public static void main(String[] args) {
-        Scanner okta = new Scanner(System.in);
-        String nama,kode,jeniskel;
-        int usia;
-        boolean JenisKelamin;
+        int[] UTS = {78, 85, 90, 76, 92, 88, 80, 82};
+        int[] UAS = {82, 88, 87, 79, 95, 85, 83, 84};
 
-        Dosen24[] arrayDosen = new Dosen24[3];
+        Nilai24 nilai = new Nilai24();
 
-        for (int i = 0; i < 3; i++) {
-            System.out.println("Masukkan Data Dosen Ke- " + (i + 1));
-            System.out.print("Kode                 :");
-            kode = okta.nextLine();
-            System.out.print("Nama                 :");
-            nama = okta.nextLine();
-            System.out.print("Jenis Kelamin        :");
-            jeniskel = okta.nextLine();
-            JenisKelamin = jeniskel.equalsIgnoreCase("Pria");
-            System.out.print("Usia                 :");
-            usia= okta.nextInt();
-            okta.nextLine();
+        int Tertinggi = nilai.TertinggiDC(UTS, 0, UTS.length - 1);
+        System.out.println("Nilai UTS Tertinggi: " + Tertinggi);
 
-            arrayDosen[i] = new Dosen24(kode, nama, JenisKelamin, usia);
-        }
+        int Terendah = nilai.TerendahDC(UTS, 0, UTS.length - 1);
+        System.out.println("Nilai UTS Terendah: " + Terendah);
 
-        int i = 1;
-        for (Dosen24 data : arrayDosen) {
-            System.out.println("Data Dosen Ke-" + i);
-            System.out.println("Kode                 :" + data.kode);
-            System.out.println("Nama                 :" + data.nama);
-            System.out.println("Jenis Kelamin        :" + (data.JenisKelamin ? "Pria" : "wanita"));
-            System.out.println("Usia                 :" + data.usia);
-            i++;
-        }
+        double rata = nilai.ratarataBF(UAS);
+        System.out.println("Rata-rata UAS: " + rata);
     }
 }
+
 ```
 ```
-Masukkan Data Dosen Ke- 1
-Kode                 :test
-Nama                 :test
-Jenis Kelamin        :pria
-Usia                 :23
-Masukkan Data Dosen Ke- 2
-Kode                 :test2
-Nama                 :test2
-Jenis Kelamin        :wanita
-Usia                 :34
-Masukkan Data Dosen Ke- 3
-Kode                 :test3
-Nama                 :test3
-Jenis Kelamin        :wanita
-Usia                 :32
-Data Dosen Ke-1
-Kode                 :test
-Nama                 :test
-Jenis Kelamin        :Pria
-Usia                 :23
-Data Dosen Ke-2
-Kode                 :test2
-Nama                 :test2
-Jenis Kelamin        :wanita
-Usia                 :34
-Data Dosen Ke-3
-Kode                 :test3
-Nama                 :test3
-Jenis Kelamin        :wanita
-Usia                 :32
+Nilai UTS Tertinggi: 92
+Nilai UTS Terendah: 76
+Rata-rata UAS: 85.375
 ```
 
-**Penjelasan:** ada 6 tahap: 
-1. Membuat class main
-2. Instansiasi object
-3. Input nilai atribut
-4. Mengakses method
-5. Menghitung jam tambahan dan pengurangan jam
-6. output
-
-## latihan 2 
-kode berada di file Dosen24.java dan DosenMain24.java, berikut adalah screenshot nya
-
-![Screenshot](image/ss1lat2.png)
-![Screenshot](image/ss2lat2.png)
-![Screenshot](image/ss3lat2.png)
-
-**Penjelasan:** ada 7 tahap: 
-1. Membuat class main
-2. Instansiasi object
-3. Input nilai atribut
-4. Mengakses method
-5. Memeriksa status
-6. Menghitung lama kerja
-7. output
+**Penjelasan:** ada 4 tahap: 
+1. Membuat class
+2. Deklarasi atribut
+3. Deklarasi method
+4. Membuat class main nya dan mengakses method nya
