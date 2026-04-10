@@ -374,5 +374,3 @@ public class MahasiswaDemo_24 {
     }
 }
 ```
-3. Deklarasi method
-4. Membuat class main nya dan mengakses method nya
