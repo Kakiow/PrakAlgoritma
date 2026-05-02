@@ -15,6 +15,7 @@ public class MahasiswaDemo24 {
             System.out.println("3. Melihat Tugas Teratas");
             System.out.println("4. Melihat Daftar Tugas");
             System.out.println("5. Pengumpul Tugas Pertama");
+            System.out.println("6. Jumlah Tugas");
             System.out.print("Pilih: ");
             pilih = okta.nextInt();
             okta.nextLine();
@@ -56,10 +57,13 @@ public class MahasiswaDemo24 {
                         System.out.println("Tugas pertama: " + pertama.nama);
                     }
                     break;
+                case 6:
+                    System.out.println("Jumlah Tugas: " + stack.JumlahTugas());
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid.");
                     break;
             }
-        } while (pilih >= 1 && pilih <= 5);
+        } while (pilih >= 1 && pilih <= 6);
     }
 }
