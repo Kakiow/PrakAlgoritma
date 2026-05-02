@@ -4,14 +4,14 @@ public class Mahasiswa24 {
     String nim;
     String nama;
     String prodi;
-    //menambahkan atribut isCanceled jawaban a
+    //menambahkan atribut isCanceled 
     Boolean isCanceled;
 
     Mahasiswa24 (String nim, String nama, String prodi, Boolean isCanceled){
         this.nim = nim;
         this.nama = nama;
         this.prodi = prodi;
-        //menambahkan atribut isCanceled di construktor jawaban a
+        //menambahkan atribut isCanceled di construktor
         this.isCanceled = isCanceled;
     }
 
