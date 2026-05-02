@@ -26,6 +26,7 @@ public class MahasiswaDemo24 {
                     System.out.println("Kelas: ");
                     String kelas = okta.nextLine();
                     Mahasiswa24 mhs = new Mahasiswa24(nama, nim, kelas);
+                    stack.push(mhs);
                     break;
                 case 2:
                     Mahasiswa24 dinilai = stack.pop();
@@ -34,7 +35,7 @@ public class MahasiswaDemo24 {
                         System.out.print("Masukkan nilai (0-100): ");
                         int nilai = okta.nextInt();
                         dinilai.tugasDinilai(nilai);
-                        System.out.printf("Nilai Tugas %s adalah $d\n", dinilai.nama, nilai);
+                        System.out.printf("Nilai Tugas %s adalah %d\n", dinilai.nama, nilai);
                     }
                     break;
                 case 3:

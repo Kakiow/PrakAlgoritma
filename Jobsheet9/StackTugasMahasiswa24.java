@@ -20,7 +20,7 @@ public class StackTugasMahasiswa24 {
     }
 
     public boolean isEmpty(){
-        if (top == 1) {
+        if (top == -1) {
             return true;
         } else {
             return false;
