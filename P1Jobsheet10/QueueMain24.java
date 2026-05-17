@@ -28,15 +28,13 @@ public class QueueMain24 {
                 case 1:
                     System.out.print("Masukkan data baru: ");
                     int dataMasuk = okta.nextInt();
-                    Q.Enqueue(dataMasuk);
+                    if (!Q.Enqueue(dataMasuk)) {
+                        return;
+                    }
                     break;
                 case 2:
-                    int dataKeluar = Q.Dequeue();
-                    if (dataKeluar != 0) {
-                        System.out.println("Data yang dikeluarkan: " + dataKeluar);
-                        break;
-                    }
-                    
+                    Q.Dequeue();
+                    break;
                 case 3:
                         Q.print();
                     break;
