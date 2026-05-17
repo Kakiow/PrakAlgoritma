@@ -90,4 +90,13 @@ public class AntrianLayanan24 {
     public int getJumlahAntrian() {
         return size;
     }
+
+    public void LihatAkhir() {
+        if (isEmpty()) {
+            System.out.println("Antrian Kosong.");
+        } else {
+            System.out.println("Antrian Belakang: ");
+            data[rear].tampilkanData();
+        }
+    }
 }
