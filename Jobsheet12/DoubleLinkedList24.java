@@ -62,7 +62,7 @@ public class DoubleLinkedList24 {
 
     public void print() {
         if (isEmpty()) {
-            System.out.println("Linked List masih 4kosong.");
+            System.out.println("Linked List masih kosong.");
             return;
         }
 
