@@ -29,6 +29,13 @@ public class DoubleLinkedListMain24 {
             System.out.println("4. Hapus data di awal");
             System.out.println("5. Hapus data di akhir");
             System.out.println("6. Tampilkan data");
+            System.out.println("7. Tambah data di indeks tertentu");
+            System.out.println("8. Hapus data setelah nim");
+            System.out.println("9. Hapus data di indeks tertentu");
+            System.out.println("10. Tampilkan data pertama");
+            System.out.println("11. Tampilkan data terakhir");
+            System.out.println("12. Tampilkan data di indeks tertentu");
+            System.out.println("13. Tampilkan jumlah data");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu : ");
             pilihan = okta.nextInt();
@@ -58,6 +65,40 @@ public class DoubleLinkedListMain24 {
                     break;
                 case 6:
                     list.print();
+                    break;
+                case 7:
+                    System.out.println("Indeks data baru: ");
+                    int index = okta.nextInt();
+                    okta.nextLine();
+                    System.out.println("Masukkan data baru: ");
+                    Mahasiswa24 Indexmhs = inputMahasiswa(okta);
+                    list.add(index, Indexmhs);
+                    break;
+                case 8:
+                    System.out.println("Masukkan NIM yang dicari : ");
+                    String key = okta.nextLine();
+                    list.removeAfter(key);
+                    break;
+                case 9:
+                    System.out.println("Masukkan indeks yang ingin dihapus: ");
+                    int idx = okta.nextInt();
+                    okta.nextLine();
+                    list.remove(idx);
+                    break;
+                case 10:
+                    list.getFirst();
+                    break;
+                case 11:
+                    list.getLast();
+                    break;
+                case 12:
+                    System.out.println("Index yang dicari: ");
+                    int indeks = okta.nextInt();
+                    okta.nextLine();
+                    list.getIndex(indeks);
+                    break;
+                case 13:
+                    System.out.println("Jumlah data: " + list.size);
                     break;
                 case 0:
                     System.out.println("Program selesai.");
