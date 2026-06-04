@@ -163,4 +163,52 @@ public class BinaryTree24 {
             }
         }
     }
+
+    public Node24 addRekursif(Node24 current, Mahasiswa24 mahasiswa) {
+        if (current == null) {
+            return new Node24(mahasiswa);
+        }
+        if (mahasiswa.ipk < current.mahasiswa.ipk) {
+            current.left = addRekursif(current.left, mahasiswa);
+        } else {
+            current.right = addRekursif(current.right, mahasiswa);
+        }
+        return current;
+    }
+
+    public void cariMinIPK() {
+        if (isEmpty()) {
+            System.out.println("Binary tree kosong");
+            return;
+        }
+        Node24 current = root;
+        while (current.left != null) {
+            current = current.left;
+        }
+        System.out.println("IPK paling kecil");
+        current.mahasiswa.tampilInformasi();
+    }
+
+    public void cariMaxIPK() {
+        if (isEmpty()) {
+            System.out.println("Binary tree kosong");
+            return;
+        }
+        Node24 current = root;
+        while (current.right != null) {
+            current = current.right;
+        }
+        System.out.println("IPK paling besar");
+        current.mahasiswa.tampilInformasi();
+    }
+
+    public void tampilMahasiswaIPKdiAtas(Node24 newNode, double ipkBatas) {
+        if (newNode != null) {
+            tampilMahasiswaIPKdiAtas(newNode.left, ipkBatas);
+            if (newNode.mahasiswa.ipk > ipkBatas) {
+                newNode.mahasiswa.tampilInformasi();
+            }
+            tampilMahasiswaIPKdiAtas(newNode.right, ipkBatas);
+        }
+    }
 }
