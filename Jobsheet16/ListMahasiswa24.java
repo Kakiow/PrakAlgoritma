@@ -25,13 +25,11 @@ public class ListMahasiswa24 {
         });
     }
 
-    int linearSearch(String nim) {
-        for (int i = 0; i < mahasiswas.size(); i++) {
-            if (nim.equals(mahasiswas.get(i).nim)) {
-                return i;
-            }
-        }
-        return -1;
+    int binarySearch(String nim) {
+        mahasiswas.sort((m1, m2) -> m1.nim.compareTo(m2.nim));
+        Mahasiswa24 cari = new Mahasiswa24(nim, "", "");
+        int index = java.util.Collections.binarySearch(mahasiswas, cari, (m1, m2) -> m1.nim.compareTo(m2.nim));
+        return index >= 0 ? index : -1;
     }
 
     public static void main(String[] args) {
@@ -41,7 +39,7 @@ public class ListMahasiswa24 {
         Mahasiswa24 m2 = new Mahasiswa24("201236", "Shannum", "021xx3");
         lm.tambah(m, m1, m2);
         lm.tampil();
-        lm.update(lm.linearSearch("201235"), new Mahasiswa24("201235", "Akhleema Lela", "021xx2"));
+        lm.update(lm.binarySearch("201235"), new Mahasiswa24("201235", "Akhleema Lela", "021xx2"));
         System.out.println("");
         lm.tampil();
     }
