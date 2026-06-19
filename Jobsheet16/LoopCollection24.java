@@ -6,7 +6,7 @@ import java.util.Stack;
 
 public class LoopCollection24 {
     public static void main(String[] args) {
-        List<String> fruits = new Stack<>();
+        Stack<String> fruits = new Stack<>();
         fruits.push("Banana");
         fruits.add("Orange");
         fruits.add("Watermelon");
@@ -37,5 +37,8 @@ public class LoopCollection24 {
         for (int i = 0; i < fruits.size(); i++) {
             System.out.printf("%s ", fruits.get(i));
         }
+
+        fruits.set(fruits.size() - 1, "Strawberry");
+        System.out.printf("%s " + fruits);
     }
 }
