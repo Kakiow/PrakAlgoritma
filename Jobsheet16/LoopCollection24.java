@@ -40,5 +40,19 @@ public class LoopCollection24 {
 
         fruits.set(fruits.size() - 1, "Strawberry");
         System.out.printf("%s " + fruits);
+
+        fruits.add("Mango");
+        fruits.add("guava");
+        fruits.add("avocado");
+        int sort = fruits.size();
+        for (int i = 0; i < sort - 1; i++) {
+            for (int j = 0; j < sort - i - 1; j++) {
+                if (fruits.get(j).compareTo(fruits.get(j + 1)) > 0) {
+                    String temp = fruits.get(j);
+                    fruits.set(j, fruits.get(j + 1));
+                    fruits.set(j + 1, temp);
+                }
+            }
+        }
     }
 }
