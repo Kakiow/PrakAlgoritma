@@ -32,6 +32,32 @@ public class ListMahasiswa24 {
         return index >= 0 ? index : -1;
     }
 
+    public void ascending() {
+        int mhs = mahasiswas.size();
+        for (int i = 0; i < mhs - 1; i++) {
+            for (int j = 0; j < mhs - i - 1; j++) {
+                if (mahasiswas.get(j).nim.compareTo(mahasiswas.get(j + 1).nim) > 0) {
+                    Mahasiswa24 temp = mahasiswas.get(j);
+                    mahasiswas.set(j, mahasiswas.get(j + 1));
+                    mahasiswas.set(j + 1, temp);
+                }
+            }
+        }
+    }
+
+    public void descending() {
+        int mhs = mahasiswas.size();
+        for (int i = 0; i < mhs - 1; i++) {
+            for (int j = 0; j < mhs - i - 1; j++) {
+                if (mahasiswas.get(j).nim.compareTo(mahasiswas.get(j + 1).nim) < 0) {
+                    Mahasiswa24 temp = mahasiswas.get(j);
+                    mahasiswas.set(j, mahasiswas.get(j + 1));
+                    mahasiswas.set(j + 1, temp);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         ListMahasiswa24 lm = new ListMahasiswa24();
         Mahasiswa24 m = new Mahasiswa24("201234", "Noureen", "021xx1");
